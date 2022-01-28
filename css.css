@@ -1,0 +1,275 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ----------------------------------------------------------------------Animated text start---------------------------------------------------------------------------*/
+
+.text-effect{
+    color: #011a32;
+    font-family: fantasy;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+    animation: animate 2s ease-in-out infinite;
+}
+@keyframes animate{
+    0%{  
+        text-shadow: 0 0 0 #0c2ffb,0 0 0 #2cfcfd,0 0 0 #fb203b,0 0 0 #fefc4b;
+        transform: translateY(0);
+    }
+    20%{  
+        text-shadow: 0 0.125em 0 #0c2ffb,0 0.25em 0 #2cfcfd,0 -0.125em 0 #fb203b,0 -0.25em 0 #fefc4b;
+        transform: translateY(-1em);
+    }
+    40%{  
+        text-shadow: 0 -0.0625em 0 #0c2ffb,0 -0.125em 0 #2cfcfd,0 0.0625em 0 #fb203b,0 0.125em 0 #fefc4b;
+        transform: translateY(0.5em);
+    }
+    60%{
+        text-shadow: 0 0.03125em 0 #0c2ffb,0 0.0625em 0 #2cfcfd,0 -0.03125em 0 #fb203b,0 -0.0625em 0 #fefc4b;
+        transform: translateY(-0.25em);
+    }
+    80%{  
+        text-shadow: 0 0 0 #0c2ffb,0 0 0 #2cfcfd,0 0 0 #fb203b,0 0 0 #fefc4b;
+        transform: translateY(0);
+    }
+}
+@media only screen and (max-width: 990px){
+    .text-effect{ font-size: 90px; }
+}
+@media only screen and (max-width: 767px){
+    .text-effect{ font-size: 65px; }
+}
+@media only screen and (max-width: 576px){
+    .text-effect{ font-size: 50px; }
+}
+@media only screen and (max-width: 479px){
+    .text-effect{ font-size: 38px; }
+}
+
+/* ----------------------------------------------------------------------Animated text end---------------------------------------------------------------------------*/
+
+nav ul{
+    list-style: none;
+    display: flex; 
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    justify-content: space-around;
+    padding: 0px;
+}
+
+nav a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    opacity: 50%;
+}
+
+#nav-main{
+    font-family: cursive;
+    font-size: 30px;
+    opacity: 100%;
+    font-size: 40px;
+}
+
+nav a:hover{
+    color: black;
+    opacity: 100%;
+    transition: 0.6s;
+}
+
+#header-image{
+    display: flex;
+    height:650px;
+    width: auto;
+    background-position: center;
+    background-image:url("photo/banner.jpg");
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
+
+#header-image h1{
+    top:50%;
+    left: 50%;
+    font-size: 60px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+
+form{
+    background-color:white;
+    /* display: flex; */
+    justify-content: center;
+    
+}
+
+#image-form{
+    max-width: 970px;
+    margin: 0px auto;
+    background-color: white;
+    position: relative;
+    margin-top: -80px;
+    padding: 50px 40px;
+    border-radius: 20px;
+}  
+
+#center{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.form-container{
+    background-color: white;
+    display: flex;
+}
+
+.form-container select{
+    outline: none;
+}
+
+#input{
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
+}
+
+#colum1{
+    display: flex;
+}
+
+.four-container{
+    background-color: rgba(165, 235, 223, 0.575);
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    height: auto;
+    justify-content: center;;
+}
+
+#image1{
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+    width: 35%;
+    background-color: white;
+    height: auto;
+    border-radius: 20px;
+}
+
+#image-text{
+    text-align: center;
+}
+
+#button{
+    border-radius: 20px;
+    width: 110px;
+    background-color: tomato;
+    height: 40px;
+    color: white;
+}
+
+#button:hover{
+    cursor: pointer;
+    background-color: red!important;
+}
+
+#section-5{
+    padding-top: 10px;
+    display: flex;
+    background-color: rgba(165, 235, 223, 0.575);
+    justify-content: space-evenly;
+    padding-bottom: 16px;
+}
+
+#sec{
+    height: auto;
+    width: 25%;
+    background-color: white;
+    border-radius: 5%;
+    }
+
+#sec-5-image{
+    
+    left: 40%;
+    display: block;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+#sec-5-image img{
+    top: 10%;
+    transform: translate(50%, 84%);
+    text-align: center;
+}
+
+#last-section{
+    position: relative;
+    padding-top: 10px;
+    width: 100%;
+    min-height: 600px;
+    background-image: url('photo/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bottom-form{
+    height: 70%;
+    width: 30vw;
+    background-color: white;
+    opacity: 0.9;
+    position:absolute;
+    bottom: 0%;
+    right: 10%;
+    border-radius: 10px;
+}
+
+#last-section form input{
+    border: none;
+    border-bottom: 2px solid lightgray;
+    opacity: 0.7;
+}
+
+
+#last-section button{
+    border-radius: 20px;
+    width: 110px;
+    background-color: tomato;
+    height: 40px;
+    color: white;
+}
+#foot-sub{
+    display: flex;
+}
+
+footer{
+    color: white;
+}
+
+footer a{
+    color: white;
+}
+
+footer a:hover{
+    color: white;
+}
+
+.container-fluid{
+    background-color: black;
+}
+
+#foot-address{
+    float: left;
+}
+
